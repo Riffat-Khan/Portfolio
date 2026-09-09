@@ -17,7 +17,15 @@ export default function ProjectCard({ project, delay = 0 }) {
   return (
     <Reveal delay={delay}>
       <div className="h-full border border-line rounded-2xl p-6 flex flex-col bg-card hover:border-accent/60 transition-colors min-h-[260px]">
-        <h3 className="font-display text-xl font-semibold">{project.title}</h3>
+        <div className="flex items-start justify-between gap-3">
+          <h3 className="font-display text-xl font-semibold">{project.title}</h3>
+          {project.inProgress && (
+            <span className="flex-shrink-0 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wide text-amber-300 border border-amber-300/30 rounded-full px-2.5 py-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-300 animate-pulse" />
+              In Progress
+            </span>
+          )}
+        </div>
 
         <div className="flex flex-wrap gap-2 mt-3">
           {project.tech.map((t) => (
@@ -28,6 +36,12 @@ export default function ProjectCard({ project, delay = 0 }) {
         </div>
 
         <p className="text-muted mt-4 text-sm leading-relaxed flex-1">{project.description}</p>
+
+        {project.plannedTech?.length > 0 && (
+          <p className="text-xs text-muted/80 mt-3 italic">
+            Next up: {project.plannedTech.join(', ')}
+          </p>
+        )}
 
         <div className="flex items-center gap-4 mt-6 font-mono text-sm">
           {project.live && (
