@@ -6,7 +6,7 @@ export const profile = {
   email: 'rifaly1100@gmail.com',
   phone: '+92 304 2641903',
   github: 'https://github.com/Riffat-Khan',
-  linkedin: 'https://linkedin.com/in/riffat-jabeen',
+  linkedin: 'https://www.linkedin.com/in/riffat-khan998/',
   resumeFile: '/Riffat-Jabeen-Resume.pdf',
   summary:
     'Hardworking and enthusiastic Software Engineer, currently working as a Python/Django developer at OpenDrawing. Specializing in Python backend development and AI integrations, with professional experience building scalable web applications, REST APIs, data-processing systems, payment workflows, user management systems, and automation pipelines.',
