@@ -20,6 +20,9 @@ export default {
       backgroundImage: {
         grid: 'linear-gradient(to right, #ffffff08 1px, transparent 1px), linear-gradient(to bottom, #ffffff08 1px, transparent 1px)',
       },
+      animation: {
+        'spin-slow': 'spin 7s linear infinite',
+      },
     },
   },
   plugins: [],
