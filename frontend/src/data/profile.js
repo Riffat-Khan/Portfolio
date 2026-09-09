@@ -78,6 +78,17 @@ export const projects = [
     comingSoon: false,
   },
   {
+    title: 'Portfolio Website',
+    description:
+      "This site — a React frontend showcasing experience and projects, being extended into a full-stack app with a Django REST Framework API and PostgreSQL database, and eventually an AI assistant that can answer questions about my work.",
+    tech: ['React', 'Vite', 'Tailwind CSS'],
+    plannedTech: ['Django REST Framework', 'PostgreSQL'],
+    github: 'https://github.com/Riffat-Khan/Portfolio',
+    live: 'https://portfolio-xwy2.vercel.app/',
+    comingSoon: false,
+    inProgress: true,
+  },
+  {
     title: 'Coming Soon',
     description: 'A new project is in the works — check back soon.',
     tech: [],
