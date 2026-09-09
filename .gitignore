@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Frontend build artifacts (frontend/.gitignore also covers these,
+# this is a repo-root safety net in case the repo root ever moves)
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+*.log
+
+# Personal working files kept locally only — not part of the site repo
+# (the resume actually served by the site lives in frontend/public/)
+/chat.txt
+/Riffat\ Jabeen\[Resume\].pdf
