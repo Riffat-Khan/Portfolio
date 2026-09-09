@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
 import { profile } from '../data/profile'
+import AvatarOrbit from './AvatarOrbit'
 
 export default function Hero() {
   return (
@@ -10,7 +11,8 @@ export default function Hero() {
     >
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-bg/40 to-bg" />
 
-      <div className="relative max-w-5xl mx-auto w-full">
+      <div className="relative max-w-5xl mx-auto w-full grid gap-12 md:grid-cols-[1.3fr_1fr] items-center">
+      <div className="order-2 md:order-1">
         <motion.p
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
@@ -77,6 +79,11 @@ export default function Hero() {
             <Mail size={20} />
           </a>
         </motion.div>
+      </div>
+
+      <div className="order-1 md:order-2">
+        <AvatarOrbit />
+      </div>
       </div>
 
       <a
